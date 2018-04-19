@@ -1,0 +1,34 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+.container-geral{
+    width:100%;
+    height:100vh;
+}
+
+.header-title{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.texto__header-title{
+    display:inline-block;
+    width:50%
+}
+
+.img-banner{
+    width:100%;
+}
+
+.container-heroimg{
+    width:100%;
+}
+
+.container-heroimg img{
+    width:100%;
+}
