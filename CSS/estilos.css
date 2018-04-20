@@ -102,7 +102,7 @@ p{
 }
 
 .paragrafo__container p{
-    font-weight:200;
+    font-weight:400;
 }
 
 .botao__container{
@@ -120,6 +120,15 @@ p{
     transform: translatey(50%);
     cursor:pointer;
     z-index:5;
+    transition:.7s;
+}
+
+.botao__container button:hover{
+     background-color: #ff4040;
+     color: white;
+     border: none;
+     border-top:1px solid #ff4040;
+     border-bottom: 4px solid white;
 }
 
 .next-page{
