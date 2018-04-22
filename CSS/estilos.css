@@ -144,7 +144,18 @@ p{
     font-family: 'raleway', sans-serif;
     border: 1px solid #ff4040;
     border-bottom: none;
+    transition:.7s;
 }
+
+/*
+.next-page:hover{
+    border: 1px solid white;
+    border-bottom: none;
+    background-color: #ff4040;
+    color: white;
+}
+
+*/
 
 .next-page span{
     font-weight:400;
@@ -164,4 +175,9 @@ p{
     background-repeat:no-repeat;
     background-position:center;
     background-size: contain;
+}
+
+.next-page-link{
+    color:black;
+    text-decoration:none;
 }

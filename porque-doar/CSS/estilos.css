@@ -1,0 +1,145 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:'raleway', sans-serif;
+    height:100vh;
+}
+
+.super-container{
+    width:100%;
+    background-image:url(imagens/background_hero_image.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    overflow:hidden;
+    position:relative;
+    padding-bottom:2em;
+}
+
+.title_container{
+    margin:3.5em 0;
+    margin-top: 4em;
+}
+
+.title_inner{
+    padding-left:7%;
+}
+
+.title_container .title_inner h1{
+    margin:0;
+    color:white;
+    font-size:4.5em;
+    font-family: 'Volkhov', serif;
+}
+
+.menu-icon{
+    height: 30px;
+    width: 42px;
+    position: fixed;
+    left: 86%;
+    top: 9%;
+    cursor: pointer;
+    z-index: 77;
+}
+
+.menu-icon img{
+    width:46px;
+    height: auto;
+}
+
+.cards_container{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 0 1em;
+    margin-bottom:7%;
+}
+
+.cards{
+    background-color:rgba(255, 255, 255, .5);
+    border:2px solid #5b1d1d;
+    border-bottom:25px solid #5b1d1d;
+    width:22%;
+    min-height:550px;
+    position:relative;
+    min-width: 330px;
+}
+
+.cards::before{
+    content:'';
+    position:absolute;
+    width: 0;
+	height: 0;
+	border-top: 35px solid #5b1d1d;
+	border-right: 35px solid transparent;
+}
+
+.figure_cards{
+    margin:0;
+    width:100%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.figure_cards img{
+    display:block;
+    margin:0 auto;
+    width:50%;
+}
+
+.cards_3 .figure_cards img{
+    width:72%;
+}
+
+.cards_3 .figure_cards{
+    position:relative;
+    top:315px;
+}
+
+.figure_cards figcaption{
+    display:block;
+    margin:0 auto;
+    margin-top:3.5em;
+    width:75%;
+    font-size:1.1em;
+    text-align: justify;
+    font-weight:400;
+}
+
+.figure_cards figcaption strong{
+    font-weight:700;
+}
+
+.next-page-cadastro{
+    display: inline-block;
+    cursor: pointer;
+    height: 4em;
+    position: absolute;
+    padding: 15px 15px 0px 15px;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -104%);
+    font-family: 'raleway', sans-serif;
+}
+
+.next-page-cadastro span{
+    font-weight:200;
+    color:white;
+    position:relative;
+}
+
+.next-page-cadastro span::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 220%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45px;
+    height: 45px;
+    background-image: url(imagens/down-arrow-white.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size: contain;
+}
