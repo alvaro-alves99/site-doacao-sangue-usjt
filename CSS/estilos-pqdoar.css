@@ -17,8 +17,7 @@ body{
 }
 
 .title_container{
-    margin:3.5em 0;
-    margin-top: 4em;
+    margin:4em 0;
 }
 
 .title_inner{
@@ -28,8 +27,22 @@ body{
 .title_container .title_inner h1{
     margin:0;
     color:white;
-    font-size:4.5em;
+    display:inline-block;
+    font-size:5em;
     font-family: 'Volkhov', serif;
+    position:relative;
+    z-index:3;
+}
+
+.title_container .title_inner h1::before{
+    content: '';
+    position: absolute;
+    background-color: #BD2F2F;
+    height: 2px;
+    width: 82%;
+    top: 84%;
+    left: 8%;
+    z-index: -1;
 }
 
 .menu-icon{
@@ -73,11 +86,34 @@ body{
 	border-right: 35px solid transparent;
 }
 
+.title-cards{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    color: #5b1d1d;
+    position: absolute;
+    top: 6%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title-cards::before{
+    content: '';
+    width: 37%;
+    height: 2px;
+    background-color: #BD2F2F;
+    position: absolute;
+    top: 152%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .figure_cards{
     margin:0;
     width:100%;
     position:absolute;
-    top:50%;
+    top:57%;
     left:50%;
     transform:translate(-50%, -50%);
 }
@@ -94,13 +130,18 @@ body{
 
 .cards_3 .figure_cards{
     position:relative;
-    top:315px;
+    top:300px;
+}
+
+.cards_3 .figure_cards figcaption{
+    position:relative;
+    top:42px;
 }
 
 .figure_cards figcaption{
     display:block;
     margin:0 auto;
-    margin-top:3.5em;
+    margin-top:2.4em;
     width:75%;
     font-size:1.1em;
     text-align: justify;

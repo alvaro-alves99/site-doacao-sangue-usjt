@@ -29,7 +29,7 @@ p{
     position:relative;
     transition:.5s;
     right: 60px;
-    background-image:url(Imagens/menu.svg);
+    background-image:url(imagens/menu.svg);
     background-position:center;
     background-repeat:no-repeat;
 }
@@ -155,6 +155,7 @@ p{
 .container-heroimg{
     width:100%;
     position:relative;
+    background-color:black;
 }
 
 .container-heroimg img{
@@ -259,6 +260,5 @@ p{
 
 .right-toggle{
     right:-5px !important;
-    background-image:url(Imagens/right-arrow.svg) !important;
+    background-image:url(imagens/right-arrow.svg) !important;
 }
-
