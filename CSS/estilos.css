@@ -1,6 +1,7 @@
 body{
     margin:0;
     padding:0;
+    font-family:'raleway', sans-serif;
 }
 
 p{
@@ -12,14 +13,82 @@ p{
     height:100vh;
 }
 
-.menu-icon{
-    height: 30px;
-    width: 42px;
+.menu-icon-container{
     position: fixed;
-    left: 88%;
+    left: 77%;
     top: 7%;
-    cursor: pointer;
+    z-index: 44;
+    transition:.8s;
+    transform: translatex(220px);
 }
+
+.menu-icon-container .menu-icon{
+    height: 40px;
+    width: 45px;
+    cursor: pointer;
+    position:relative;
+    transition:.5s;
+    right: 60px;
+    background-image:url(Imagens/menu.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+.menu-list-container{
+    position: absolute;
+    width: 153px;
+    top: -14px;
+    left: 91px;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 4px 29px;
+    border-radius: 18px;
+}
+
+.menu-list-container .menu-ul{
+    padding-left:0;
+    list-style-type: none;
+}
+
+.menu-list-container .menu-ul a{
+    font-size: 1.6em;
+    text-decoration:none;
+    color:black;
+}
+
+.menu-ul a{
+    display:block;
+    font-family: 'Volkhov', serif;
+    position:relative;
+    z-index:30;
+}
+
+.menu-ul li{
+    display:inline-block;
+    position:relative;
+}
+
+.menu-ul li::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 65%;
+    will-change:background-image;
+    transition:.5s;
+    width: 0%;
+    height: 12%;
+    opacity:.8;
+    background-color: #ff4040;
+    z-index:-1;
+}
+
+.menu-ul li:hover::before{
+    width:102%;
+}
+
+.menu-ul a:not(:last-child){
+    margin-bottom:10px;
+}
+
 
 .header-title{
     width:100%;
@@ -181,3 +250,15 @@ p{
     color:black;
     text-decoration:none;
 }
+
+/* CLASSES PARA MUDANCAS*/
+
+.muda-translate{
+    transform:translateX(0) !important;
+}
+
+.right-toggle{
+    right:-5px !important;
+    background-image:url(Imagens/right-arrow.svg) !important;
+}
+
